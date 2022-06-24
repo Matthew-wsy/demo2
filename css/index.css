@@ -1,0 +1,485 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.w {
+    /* 版心 */
+    width: 1200px;
+    margin: auto;
+}
+body {
+    background-color: #cceae2;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.header {
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    /* background-color: rgb(255, 0, 255); */
+    /* 注意此地方会层叠w中的margin */
+    z-index: 999;
+    margin: auto;
+    background-color: #f5f8fc;
+}
+.logo {
+    float: left;
+    width: 50px;
+    height: 20px;
+    margin-left: 20px;
+        /* background-color: rgb(160, 43, 43); */
+}
+.nav {
+    float: left;
+    margin-left: 200px;
+    height: 42px;
+}
+.nav li {
+    float: left;
+    margin: 0 26px;
+}
+.nav li a {
+    display: block;
+    height: 70px;
+    /* 上下不给padding左右靠padding撑开盒子 */
+    padding: 0 10px;
+    /* 让文字垂直居中 */
+    line-height: 70px;
+    font-size: 18px;
+    color: #050505;
+
+}
+.nav li a:hover {
+    /*border-bottom: 2px solid #51998D;*/
+    color:#51998D;
+    background-color:#cceae2;
+}
+
+.search {
+    float: left;
+    width: 420px;
+    height: 40px;
+    /* background-color: blue; */
+    margin-left: 10px;
+    margin-top: 18px;
+  
+}
+.search input {
+    float: left;
+    width: 345px;
+    height: 40px;
+    border: 1px solid #51998D;
+    border-right: 0;
+    color: #bfbfbf;
+    font-size: 14px;
+   
+}
+.search button {
+    float: left;
+    width: 50px;
+    height: 42px;
+    background-color: #fff;
+    /* 按钮默认有个边框 */
+    border: 0;
+    background: url(../images/button1.png);
+}
+.user {
+    float: left;
+    margin-top: 25px;
+    list-style-type:none;
+
+}
+.user img{
+    vertical-align: middle;
+    /* 调节图片垂直对齐方式，middle：居中 */
+ 
+ }
+.empty{
+    height: 70px;
+}
+.banner {
+    height: 300px;
+    background:url(../images/leaves.JPG);
+}
+.banner1 {
+    height: 1170px;
+}
+.banner .w {
+    height: 300px;
+    background: url(../images/bf59ae0b2dc2259cf85a90d70dcbfad.png);
+}
+.subnav {
+    float: left;
+    width: 190px;
+    height: 500Spx;
+    background: rgba(0,0,0,.3);
+}
+.subnav ul li {
+    height: 100px;
+    line-height: 100px;
+    padding: 0 20px;
+}
+.subnav ul li a {
+    font-size: 17px;
+    color: #fff;
+
+}
+.subnav ul li a span {
+    float: right;
+}
+.subnav ul li a:hover {
+    color: #51998D;
+}
+.course {
+    float: right;
+    width: 230px;
+    height: 312px;
+    background-color: #fff;
+    margin-top: 50px;
+    /* 浮动的盒子不会有外边距塌陷的问题 */
+
+}
+.course h2 {
+    height: 48px;
+    background-color: #9bceea;
+    text-align: center;
+    line-height: 48px;
+    font-size: 18px;
+    color:#fff;
+}
+.course .bd {
+    padding: 0 20px;
+}
+.course .bd ul li {
+    padding: 14px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.course .bd ul li h4 {
+    font-size: 16px;
+    color: #4e4e4e;
+}
+.course .bd ul li p {
+    font-size: 14px;
+    color: #a5a5a5;
+}
+.course .bd .more {
+    display: block;
+    height: 38px;
+    border: 1px solid #51998D;
+    text-align: center;
+    line-height: 38px;
+    color: #51998D;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 5px;
+}
+.goods {
+    margin-top: 10px;
+    height: 60px;
+    background-color: #fff;
+    box-shadow: 0 2px 3px 3px rgba(0,0,0,.1);
+    line-height: 60px;
+}
+.goods h3 {
+    float: left;
+    margin-left: 30px;
+    font-size: 16px;
+    color: #51998D;
+}
+.goods ul {
+    float: left;
+    margin-left: 30px;
+}
+.goods ul li {
+    float: left;
+ }
+ .goods ul li a {
+    padding: 0 30px;
+    font-size: 16px;
+    color: #050505;
+    border-left: 1px solid #ccc;
+ }
+ .goods ul li a:hover {
+     color: #51998D;
+ }
+
+* {
+    box-sizing: border-box;
+}
+h1 {
+    display: block;
+    font-size: 38px;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+
+.title span {
+    font-size: 18px;
+}
+.title {
+    margin-top: 60px;
+    margin-bottom: 58px;
+    text-align: center;
+    color: #050505;
+}
+
+
+.container {
+    position: relative;
+    width: 1170px;
+    margin: 0 auto;
+
+}
+.advantage,
+.introduce {
+    overflow: hidden;
+}
+.intr-1 {
+    width: 396px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+.intr-2 {
+    position: absolute;
+    height: 400;
+    width: 576px;
+    left: 396px;
+    top: 0;
+    overflow: hidden;
+}
+
+.intr-3 {
+    position: absolute;
+    left: 890px;
+    width: 380px;
+    height: 285.14px;
+    padding: 0 5px;
+    background: #f5f8fc;
+    z-index: 1;
+}
+
+.intr-3::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-top: 15px solid #f5f8fc;
+    position: absolute;
+    left: 80px;
+    bottom: -15px;
+}
+
+.intr-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.intr-3 .intr-title {
+    margin-top: 90px;
+}
+
+.intr-title span {
+    display: inline-block;
+}
+
+.intr-title span::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 32px;
+    margin: 9px 0;
+    background: #448aca;
+}
+
+.intr-4 {
+    width: 396px;
+    height: 300px;
+    position: absolute;
+    left: 0;
+    top: 400px;
+    padding: 44px 58px;
+    background: #f5f8fc;
+    z-index: 1;
+}
+
+.intr-4::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid #f5f8fc;
+    border-top: 15px solid transparent;
+    position: absolute;
+    right: -15px;
+    top: 68px;
+}
+
+.intr-5 {
+    position: absolute;
+    left: 396px;
+    top: 286.14px;
+    width: 280px;
+    height: 166px;
+    padding: 44px 24px 0;
+    background: #fff;
+}
+
+.intr-5::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #fff;
+    border-top: 15px solid transparent;
+    position: absolute;
+    left: -15px;
+    top: 35px;
+}
+
+.font-size-12 {
+    font-size: 12px;
+}
+
+.intr-6 {
+    position: absolute;
+    left: 676px;
+    top: 286.14px;
+    width: 214px;
+    height: 166px;
+    padding: 20px 10px 0 25px;
+    background: #f5f8fc;
+}
+
+.intr-6::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-bottom: 15px solid #f5f8fc;
+    border-right: 15px solid transparent;
+    border-left: 15px solid transparent;
+    position: absolute;
+    top: -15px;
+    left: 55px;
+}
+
+.intr-7 {
+    position: absolute;
+    left: 396px;
+    top: 452.14px;
+    width: 494px;
+    height: 205.42px;
+    overflow: hidden;
+}
+
+.intr-8 {
+    position: absolute;
+    left: 890px;
+    top: 285px;
+    width: 280px;
+    height: 600px;
+    overflow: hidden;
+}
+.intr {
+    width: 100%;
+    height: 658px;
+}
+.font-size-12 {
+    font-size: 12px;
+}
+.relative{
+    position: relative;
+}
+.intr-1:hover .intr-info,
+.intr-2:hover .intr-info,
+.intr-7:hover .intr-info,
+.intr-8:hover .intr-info {
+    opacity: 1;
+}
+
+.intr img {
+    -ms-transition: transform 1s;
+    -moz-transition: transform 1s;
+    -webkit-transition: transform 1s;
+    -o-transition: transform 1s;
+    transition: transform 1s;
+}
+
+.intr-1:hover img,
+.intr-2:hover img,
+.intr-7:hover img,
+.intr-8:hover img {
+    -ms-trasform: scale(1.1);
+    -moz-trasform: scale(1.1);
+    -webkit-trasform: scale(1.1);
+    -o-trasform: scale(1.1);
+    transform: scale(1.1);
+}
+.intr-info {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    opacity: 0;
+    -ms-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -webkit-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.intr-info-text {
+    width: 100px;
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.intr-info-text a {
+    color: #fff;
+}
+
+.intr-info-text .line {
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    margin-top: 10px;
+}
+
+.hide {
+    display: none;
+}
+
+
+
+
+
+
+
+
